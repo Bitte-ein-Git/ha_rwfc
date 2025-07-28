@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Retro Rewind player:",
+        "fields": {
+          "player_name": {
+            "name": "Friendly name (e.g. 'Player')",
+            "description": "e.g. 'Playername'"
+          },
+          "friend_code": {
+            "name": "Friend code (e.g. '1234-5678-9069')",
+            "description": "(e.g. '1234-5678-9069')"
+          }
+        }
+      }
+    }
+  }
+}
