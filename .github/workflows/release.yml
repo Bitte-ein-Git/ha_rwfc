@@ -23,7 +23,7 @@ jobs:
           zip rwfc.zip -r ./
       - name: Set release variable
         run: |
-          echo "release_version=`git describe --abbrev=0`" >> $GITHUB_ENV
+          echo "release_version=v1.0.0" >> $GITHUB_ENV
       - name: Sleep
         # add delay so upload does not kill the release notes from semantic-release
         run: |
