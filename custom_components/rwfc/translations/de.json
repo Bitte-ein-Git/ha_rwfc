@@ -1,0 +1,48 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Retro Rewind konfigurieren",
+                "description": "Füge einen Spieler per Freundescode hinzu und/oder aktiviere globale Server-Sensoren.",
+                "data": {
+                    "player_name": "Spielername (optional)",
+                    "friend_code": "Freundescode (optional, z.B. 1234-5678-9012)",
+                    "enable_retro_vs": "Allgemeine 'Retro VS'-Sensoren aktivieren",
+                    "enable_custom_vs": "Allgemeine 'Custom VS'-Sensoren aktivieren"
+                }
+            }
+        },
+        "error": {
+            "at_least_one_option": "Du musst einen Freundescode angeben oder mindestens eine globale Sensor-Option aktivieren."
+        },
+        "abort": {
+            "already_configured": "Dieses Gerät oder dieser Spieler ist bereits konfiguriert."
+        }
+    },
+    "entity": {
+        "sensor": {
+            "status": {
+                "name": "Raumzustand",
+                "state": {
+                    "offline": "🚫 Offline",
+                    "track_selection": "🗺️ 𝙎𝙩𝙧𝙚𝙘𝙠𝙚𝙣𝙖𝙪𝙨𝙬𝙖𝙝𝙡",
+                    "ongoing_race": "🌎 𝗶𝗺 𝗥𝗲𝗻𝗻𝗲𝗻",
+                    "ongoing_race_full": "😱 𝗞𝗲𝗶𝗻 𝗕𝗲𝗶𝘁𝗿𝗶𝘁𝘁 𝗺ö𝗴𝗹𝗶𝗰𝗵! ...Lobby voll"
+                }
+            },
+            "room_type": {
+                "name": "Raumtyp",
+                "state": {
+                    "retro_vs": "🕹️ Retro VS",
+                    "retro_tt": "⏰ Retro ZF",
+                    "retro_200cc": "🚀 Retro 200cc",
+                    "custom_vs": "🚧 Custom VS",
+                    "custom_tt": "⏰ Custom ZF",
+                    "custom_200cc": "💥 Custom 200cc",
+                    "none": "🚫 Offline",
+                    "unknown": "Unbekannt"
+                }
+            }
+        }
+    }
+}

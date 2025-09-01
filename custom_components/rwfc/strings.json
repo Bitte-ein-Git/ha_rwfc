@@ -1,0 +1,48 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Configure Retro Rewind",
+                "description": "Add a player by friend code and/or enable global status sensors.",
+                "data": {
+                    "player_name": "Friendly Name (optional)",
+                    "friend_code": "Friend Code (optional, e.g., 1234-5678-9012)",
+                    "enable_retro_vs": "Enable global 'Retro VS' sensors",
+                    "enable_custom_vs": "Enable global 'Custom VS' sensors"
+                }
+            }
+        },
+        "error": {
+            "at_least_one_option": "You must provide a friend code or enable at least one global sensor option."
+        },
+        "abort": {
+            "already_configured": "This device or player is already configured."
+        }
+    },
+    "entity": {
+        "sensor": {
+            "status": {
+                "name": "Room state",
+                "state": {
+                    "offline": "🚫 Offline",
+                    "track_selection": "🗺️ 𝘾𝙤𝙪𝙧𝙨𝙚 𝙨𝙚𝙡𝙚𝙘𝙩𝙞𝙤𝙣",
+                    "ongoing_race": "🌎 𝗢𝗻𝗴𝗼𝗶𝗻𝗴 𝗿𝗮𝗰𝗲",
+                    "ongoing_race_full": "😱 - 𝗻𝗼𝘁 𝗷𝗼𝗶𝗻𝗮𝗯𝗹𝗲! ...Lobby full"
+                }
+            },
+            "room_type": {
+                "name": "Room Type",
+                "state": {
+                    "retro_vs": "🕹️ Retro VS",
+                    "retro_tt": "⏰ Retro TT",
+                    "retro_200cc": "🚀 Retro 200cc",
+                    "custom_vs": "🚧 Custom VS",
+                    "custom_tt": "⏰ Custom TT",
+                    "custom_200cc": "💥 Custom 200cc",
+                    "none": "🚫 Offline",
+                    "unknown": "Unknown"
+                }
+            }
+        }
+    }
+}

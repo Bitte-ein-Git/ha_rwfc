@@ -1,0 +1,11 @@
+{
+  "domain": "rwfc",
+  "name": "Retro Rewind: status tracker 🏎️",
+  "codeowners": ["@Bitte-ein-Git", "@elias1731"],
+  "config_flow": true,
+  "documentation": "https://github.com/Bitte-ein-Git/ha_rwfc",
+  "issue_tracker": "https://github.com/Bitte-ein-Git/ha_rwfc/issues",
+  "version": "1.0.0",
+  "iot_class": "cloud_polling",
+  "requirements": []
+}

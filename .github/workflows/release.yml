@@ -1,0 +1,25 @@
+name: Release » 'master'
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: ZIP Component Dir
+        run: |
+          cd ${{ github.workspace }}/custom_components/rwfc
+          zip -r rwfc.zip ./
+
+      - name: Upload zip to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ github.workspace }}/custom_components/rwfc/rwfc.zip
+          asset_name: rwfc.zip
+          tag: ${{ github.ref }}
+          overwrite: true
